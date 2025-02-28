@@ -7,7 +7,7 @@ mod governance;
 mod storage;
 mod types;
 
-use types::{DaoConfig, DaoError, Proposal, ProposalStatus, ProposalType, VoteType};
+use types::{DaoConfig, DaoError, Proposal, ProposalType, VoteType};
 
 #[contract]
 pub struct DaoContract;

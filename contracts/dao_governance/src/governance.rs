@@ -4,12 +4,12 @@ use crate::events::{
     emit_proposal_created, emit_proposal_executed, emit_proposal_finalized, emit_vote_cast,
 };
 use crate::storage::{
-    get_config, get_proposal, get_proposal_count, has_voted, increment_proposal_count,
+    get_config, get_proposal, has_voted, increment_proposal_count,
     save_proposal, save_vote,
 };
 use crate::types::{DaoError, Proposal, ProposalStatus, ProposalType, Vote, VoteType};
 use core::cmp::max;
-use soroban_sdk::{Address, Env, String, Vec};
+use soroban_sdk::{Address, Env, String};
 
 pub fn create_proposal(
     env: &Env,

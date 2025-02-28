@@ -1,5 +1,5 @@
 // src/clients.rs
-use soroban_sdk::{Address, Env, Symbol};
+use soroban_sdk::{Address, Env};
 
 /// A client for the reputation contract.
 pub struct ReputationClient<'a> {
